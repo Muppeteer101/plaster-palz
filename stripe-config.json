@@ -1,0 +1,72 @@
+{
+  "mode": "test",
+  "shipping_rate": "shr_1U5nQvDYqe7Ql89erAQDuhPJ",
+  "products": {
+    "minis-5-pack": {
+      "product": "prod_V5zQOXTfw4BDfM",
+      "price": "price_1U5nRtDYqe7Ql89eTczeWYoA",
+      "amount": 1499,
+      "payment_link": "https://buy.stripe.com/test_00w7sLf5i8mfe714xx9R60a"
+    },
+    "minis-3-pack": {
+      "product": "prod_V5zPPEeZI3DjTY",
+      "price": "price_1U5nR6DYqe7Ql89eiZvg5hM9",
+      "amount": 999,
+      "payment_link": "https://buy.stripe.com/test_dRm5kDbT6cCv8MH9RR9R609"
+    },
+    "frog": {
+      "product": "prod_V5zPGXCy7ayWhp",
+      "price": "price_1U5nR5DYqe7Ql89eqQnaw3DV",
+      "amount": 1299,
+      "payment_link": "https://buy.stripe.com/test_eVqaEX8GUeKDe71bZZ9R608"
+    },
+    "rainbow": {
+      "product": "prod_V5zPJn8ImFojKb",
+      "price": "price_1U5nR4DYqe7Ql89eFQtesfx9",
+      "amount": 1299,
+      "payment_link": "https://buy.stripe.com/test_cNi7sL8GUgSLbYTbZZ9R607"
+    },
+    "unicorn": {
+      "product": "prod_V5zPQ33CJb2ohJ",
+      "price": "price_1U5nR3DYqe7Ql89eP8mXyjeN",
+      "amount": 1499,
+      "payment_link": "https://buy.stripe.com/test_bJe14n5uI1XR1kfbZZ9R606"
+    },
+    "reindeer": {
+      "product": "prod_V5zP5nnRaGVSrW",
+      "price": "price_1U5nR1DYqe7Ql89eTzVWKuHv",
+      "amount": 1299,
+      "payment_link": "https://buy.stripe.com/test_eVqeVd4qE8mf3snggf9R605"
+    },
+    "christmas-tree": {
+      "product": "prod_V5zPYMBAReVWvL",
+      "price": "price_1U5nR0DYqe7Ql89eOWwJ43TR",
+      "amount": 1299,
+      "payment_link": "https://buy.stripe.com/test_fZu4gzg9maun4wrbZZ9R604"
+    },
+    "pumpkin-witch": {
+      "product": "prod_V5zPjLyOUghVpX",
+      "price": "price_1U5nQzDYqe7Ql89eXn1LA3Js",
+      "amount": 1499,
+      "payment_link": "https://buy.stripe.com/test_aFa14n7CQbyr0gb0hh9R603"
+    },
+    "ghost": {
+      "product": "prod_V5zP4bTmN7L1bp",
+      "price": "price_1U5nQyDYqe7Ql89eTJMZAoQv",
+      "amount": 1299,
+      "payment_link": "https://buy.stripe.com/test_14A8wP0aoaun1kfggf9R602"
+    },
+    "black-cat": {
+      "product": "prod_V5zPlfQfC8kUx6",
+      "price": "price_1U5nQxDYqe7Ql89egiUyxgZn",
+      "amount": 1299,
+      "payment_link": "https://buy.stripe.com/test_14A9ATf5icCv2oj2pp9R601"
+    },
+    "ghost-pumpkin": {
+      "product": "prod_V5zPMxvSuBh1PT",
+      "price": "price_1U5nQvDYqe7Ql89eQcZBoWs1",
+      "amount": 1299,
+      "payment_link": "https://buy.stripe.com/test_3cI14ne1e9qje718NN9R600"
+    }
+  }
+}

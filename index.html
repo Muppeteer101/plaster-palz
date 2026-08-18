@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plaster Palz — Pick. Paint. Play.</title>
+  <meta name="description" content="Plaster Palz are paintable plaster characters, individually hand cast in Scotland. Every kit includes a plaster figure, acrylic paints and two brushes. Created by us. Painted by YOU.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Nunito:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎃</text></svg>">
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="logo" href="#top" aria-label="Plaster Palz home">
+        <span class="logo-mark" aria-hidden="true">🎃</span>
+        <span class="logo-word">Plaster<b>Palz</b></span>
+      </a>
+      <nav class="nav-links" aria-label="Main">
+        <a href="#shop">Shop</a>
+        <a href="#how">Pick. Paint. Play.</a>
+        <a href="#watch">Watch</a>
+        <a href="#grownups">Grown-Ups</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn-primary btn-small" href="#shop">Shop Kits</a>
+        <button type="button" class="cart-button" id="cart-button" aria-label="Open basket">
+          🧺<span class="cart-count" id="cart-count">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero-art">
+        <img src="images/kit-hero.webp" alt="The Plaster Palz Halloween kit: a white plaster ghost-in-a-pumpkin figure with six paint pots, two blue brushes and painting instructions">
+      </div>
+      <div class="hero-copy">
+        <p class="hero-badge">🎃 New — The Halloween Collection</p>
+        <h1>Created by us.<br>Painted by <span class="hl-orange">YOU</span>.</h1>
+        <p>Plaster Palz are paintable plaster characters, individually hand cast in Scotland. Every kit comes with a blank pal, bright acrylic paints and two proper brushes — everything you need to bring your pal to life.</p>
+        <div class="cta-stack">
+          <a class="btn btn-primary" href="#shop">Shop The Kits</a>
+          <a class="btn btn-ghost" href="#watch">▶ Watch The Film</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PICK PAINT PLAY ============ -->
+    <section class="section" id="how">
+      <h2 class="section-title">Pick. Paint. Play.</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num step-orange">1</div>
+          <h3>Pick</h3>
+          <p>Choose your pal. This season it's the Halloween crew — ghosts, pumpkins, witches, black cats and friends.</p>
+        </div>
+        <div class="step">
+          <div class="step-num step-green">2</div>
+          <h3>Paint</h3>
+          <p>Splash on the colours however you like. Spooky, silly, sparkly — your pal, your rules.</p>
+        </div>
+        <div class="step">
+          <div class="step-num step-navy">3</div>
+          <h3>Play</h3>
+          <p>Once the paint dries, show off your creation and inspire others — then display your masterpiece!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ THE PLAQUE ============ -->
+    <section class="section" id="kit">
+      <h2 class="section-title">Meet the Ghost Pumpkin</h2>
+      <p class="section-sub">A cheeky ghost popping out of a jack-o'-lantern, with a flower in her hair and a grin to paint. Every figure is individually hand cast, finished and packed with care in Scotland.</p>
+      <div class="plaque-gallery">
+        <figure class="plaque-card">
+          <img src="images/plaque-front.webp" alt="Front view of the white plaster ghost pumpkin figure, with sculpted face and pumpkin details ready to paint">
+          <figcaption>The front — ready for colour</figcaption>
+        </figure>
+        <figure class="plaque-card">
+          <img src="images/plaque-side.webp" alt="Side view of the plaster figure showing its chunky depth">
+          <figcaption>Chunky and satisfying to hold</figcaption>
+        </figure>
+        <figure class="plaque-card">
+          <img src="images/plaque-back.webp" alt="Smooth back view of the plaster figure">
+          <figcaption>The back — smooth as a pebble</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ SHOP ============ -->
+    <section class="section" id="shop">
+      <h2 class="section-title">Shop the Palz</h2>
+      <p class="section-sub">Every kit includes the plaster figure, assorted acrylic paints, two brushes and a colouring card. Which pal will you pick?</p>
+      <div class="shop-grid">
+        <article class="product-card" style="--accent:#f5820d; --accent-dark:#d96f05;">
+          <span class="product-tag">🎃 Halloween</span>
+          <img src="images/plaque-front.webp" alt="White plaster Ghost Pumpkin figure ready to paint">
+          <h3>Ghost Pumpkin</h3>
+          <p class="product-size">Large flat plaque · single kit</p>
+          <p class="product-desc">A cheeky ghost bursting out of a jack-o'-lantern.</p>
+          <div class="product-buy">
+            <span class="product-price">£12.99</span>
+            <button type="button" class="btn btn-add" data-add="ghost-pumpkin">Add to basket</button>
+          </div>
+        </article>
+        <article class="product-card" style="--accent:#3c3c3c; --accent-dark:#222222;">
+          <span class="product-tag">🎃 Halloween</span>
+          <img src="images/product-cat.webp" alt="White plaster Black Cat figure with a fluffy chest ready to paint">
+          <h3>Black Cat</h3>
+          <p class="product-size">3D figure · single kit</p>
+          <p class="product-desc">A fluffy-chested kitty with a knowing little smile.</p>
+          <div class="product-buy">
+            <span class="product-price">£12.99</span>
+            <button type="button" class="btn btn-add" data-add="black-cat">Add to basket</button>
+          </div>
+        </article>
+        <article class="product-card" style="--accent:#8f6be8; --accent-dark:#7554c9;">
+          <span class="product-tag">🎃 Halloween</span>
+          <img src="images/product-ghost.webp" alt="White plaster Ghost figure with raised arms and a surprised face ready to paint">
+          <h3>Ghost</h3>
+          <p class="product-size">3D figure · single kit</p>
+          <p class="product-desc">Arms up, mouth open — the friendliest boo you'll ever hear.</p>
+          <div class="product-buy">
+            <span class="product-price">£12.99</span>
+            <button type="button" class="btn btn-add" data-add="ghost">Add to basket</button>
+          </div>
+        </article>
+        <article class="product-card" style="--accent:#58cc02; --accent-dark:#4cae02;">
+          <span class="product-tag">🎃 Halloween</span>
+          <img src="images/product-pumpkin-witch.webp" alt="White plaster Pumpkin Witch figure with a pointed hat, staff and little pumpkin, ready to paint">
+          <h3>Pumpkin Witch</h3>
+          <p class="product-size">3D figure · single kit</p>
+          <p class="product-desc">A pumpkin-headed witch with a staff, a robe and lots of detail to paint.</p>
+          <div class="product-buy">
+            <span class="product-price">£14.99</span>
+            <button type="button" class="btn btn-add" data-add="pumpkin-witch">Add to basket</button>
+          </div>
+        </article>
+        <article class="product-card" style="--accent:#1a9e4b; --accent-dark:#127a38;">
+          <span class="product-tag">🎄 Christmas</span>
+          <img src="images/product-christmas-tree.webp" alt="White plaster Christmas Tree figure with bows and baubles ready to paint">
+          <h3>Christmas Tree</h3>
+          <p class="product-size">Large flat plaque · single kit</p>
+          <p class="product-desc">Big bows and baubles — ready for full festive colour.</p>
+          <div class="product-buy">
+            <span class="product-price">£12.99</span>
+            <button type="button" class="btn btn-add" data-add="christmas-tree">Add to basket</button>
+          </div>
+        </article>
+        <article class="product-card" style="--accent:#d64541; --accent-dark:#b0332f;">
+          <span class="product-tag">🎄 Christmas</span>
+          <img src="images/product-reindeer.webp" alt="White plaster Reindeer figure with a Santa hat, scarf and big nose ready to paint">
+          <h3>Reindeer</h3>
+          <p class="product-size">Large flat plaque · single kit</p>
+          <p class="product-desc">A cosy reindeer in a Santa hat and scarf, with a nose made for red paint.</p>
+          <div class="product-buy">
+            <span class="product-price">£12.99</span>
+            <button type="button" class="btn btn-add" data-add="reindeer">Add to basket</button>
+          </div>
+        </article>
+        <article class="product-card" style="--accent:#f0559d; --accent-dark:#d13c85;">
+          <span class="product-tag">🦄 Magic</span>
+          <img src="images/product-unicorn.webp" alt="White plaster Unicorn figure ready to paint">
+          <h3>Unicorn</h3>
+          <p class="product-size">3D figure · single kit</p>
+          <p class="product-desc">A dreamy unicorn with a mane made for rainbow colours.</p>
+          <div class="product-buy">
+            <span class="product-price">£14.99</span>
+            <button type="button" class="btn btn-add" data-add="unicorn">Add to basket</button>
+          </div>
+        </article>
+        <article class="product-card" style="--accent:#1cb0f6; --accent-dark:#0f8fd0;">
+          <span class="product-tag">🌈 Magic</span>
+          <img src="images/product-rainbow.webp" alt="White plaster Rainbow figure ready to paint">
+          <h3>Rainbow</h3>
+          <p class="product-size">Large flat plaque · single kit</p>
+          <p class="product-desc">An arch of stripes and fluffy clouds — paint every band.</p>
+          <div class="product-buy">
+            <span class="product-price">£12.99</span>
+            <button type="button" class="btn btn-add" data-add="rainbow">Add to basket</button>
+          </div>
+        </article>
+        <article class="product-card" style="--accent:#2e9e5b; --accent-dark:#257f49;">
+          <span class="product-tag">🐸 Garden</span>
+          <img src="images/product-frog.webp" alt="White plaster Frog figure sitting on a lily pad holding a flower, ready to paint">
+          <h3>Frog</h3>
+          <p class="product-size">3D figure · single kit</p>
+          <p class="product-desc">A big-eyed frog on a lily pad, holding a flower just for you.</p>
+          <div class="product-buy">
+            <span class="product-price">£12.99</span>
+            <button type="button" class="btn btn-add" data-add="frog">Add to basket</button>
+          </div>
+        </article>
+      </div>
+      <div class="pack-builder" id="minis">
+        <h3 class="pack-title">Build your Minis Pack</h3>
+        <p class="pack-sub">Our small figures come in packs of 3 or 5 — mix and match any way you like!</p>
+        <div class="pack-sizes" role="group" aria-label="Pack size">
+          <button type="button" class="pack-size-btn active" data-size="3">3-Pack · £9.99</button>
+          <button type="button" class="pack-size-btn" data-size="5">5-Pack · £14.99</button>
+        </div>
+        <div class="mini-grid">
+          <div class="mini-tile" data-mini="bat">
+            <img src="images/mini-bat.webp" alt="Small white plaster Bat figure">
+            <b>Bat</b>
+            <div class="mini-stepper">
+              <button type="button" data-mini-minus aria-label="Remove one Bat">−</button>
+              <span class="mini-count">0</span>
+              <button type="button" data-mini-plus aria-label="Add one Bat">+</button>
+            </div>
+          </div>
+          <div class="mini-tile" data-mini="jack-o-lantern">
+            <img src="images/mini-jack-o-lantern.webp" alt="Small white plaster Jack-o'-Lantern figure">
+            <b>Jack-o'-Lantern</b>
+            <div class="mini-stepper">
+              <button type="button" data-mini-minus aria-label="Remove one Jack-o'-Lantern">−</button>
+              <span class="mini-count">0</span>
+              <button type="button" data-mini-plus aria-label="Add one Jack-o'-Lantern">+</button>
+            </div>
+          </div>
+          <div class="mini-tile" data-mini="skull">
+            <img src="images/mini-skull.webp" alt="Small white plaster Skull figure">
+            <b>Skull</b>
+            <div class="mini-stepper">
+              <button type="button" data-mini-minus aria-label="Remove one Skull">−</button>
+              <span class="mini-count">0</span>
+              <button type="button" data-mini-plus aria-label="Add one Skull">+</button>
+            </div>
+          </div>
+          <div class="mini-tile" data-mini="highland-cow">
+            <img src="images/mini-highland-cow.webp" alt="Small white plaster Highland Cow figure">
+            <b>Highland Cow</b>
+            <div class="mini-stepper">
+              <button type="button" data-mini-minus aria-label="Remove one Highland Cow">−</button>
+              <span class="mini-count">0</span>
+              <button type="button" data-mini-plus aria-label="Add one Highland Cow">+</button>
+            </div>
+          </div>
+        </div>
+        <p class="pack-status" id="pack-status">Picked 0 of 3 — choose 3 more</p>
+        <button type="button" class="btn btn-primary btn-block" id="pack-add" disabled>Add 3-Pack — £9.99</button>
+        <p class="pack-card-links" id="pack-card-links"></p>
+      </div>
+
+      <p class="shop-note">P&amp;P (£4.95 UK tracked) is added at checkout. 💌</p>
+    </section>
+
+    <!-- ============ CHRISTMAS COLLECTION ============ -->
+    <section class="section feature">
+      <div class="feature-art">
+        <img src="images/kit-card-christmas.webp" alt="The Plaster Palz Christmas kit card showing Santa, gnomes, a reindeer and a gingerbread house with snowman">
+      </div>
+      <div class="feature-copy">
+        <h2>Christmas is <span class="hl-festive">coming</span></h2>
+        <p>The Christmas Tree kit is just the start — Santa, gnomes, a reindeer and more festive friends are on their way for the full Christmas Collection. Every kit comes with its own themed colouring card to warm up your ideas.</p>
+        <a class="btn btn-ghost" href="#shop">Shop what's here now</a>
+      </div>
+    </section>
+
+    <!-- ============ VIDEO ============ -->
+    <section class="section watch" id="watch">
+      <div class="watch-copy">
+        <h2>Watch a pal <span class="hl-orange">come to life</span></h2>
+        <p>Thirty seconds of pure painting magic. See the Ghost Pumpkin go from blank plaster to Halloween star.</p>
+        <p class="social-line">Follow the fun — <b>@plasterpalz</b> on TikTok, Instagram &amp; YouTube.</p>
+      </div>
+      <div class="phone-frame">
+        <video controls playsinline preload="metadata" poster="images/kit-hero.webp">
+          <source src="video/plaster-palz-30s.mp4" type="video/mp4">
+          Your browser doesn't support video playback.
+        </video>
+      </div>
+    </section>
+
+    <!-- ============ WHAT'S IN THE BOX ============ -->
+    <section class="section">
+      <h2 class="section-title">Everything's in the kit</h2>
+      <div class="kit-grid">
+        <div class="kit-item">
+          <img src="images/plaque-front.webp" alt="The blank plaster figure">
+          <h3>Plaster figure</h3>
+          <p>Individually hand cast and finished, with sculpted details that make painting easy.</p>
+        </div>
+        <div class="kit-item">
+          <img src="images/paint-pots.webp" alt="A strip of six connected acrylic paint pots">
+          <h3>Acrylic paints</h3>
+          <p>Assorted pots of bright, ready-to-go acrylic paint — no mixing required.</p>
+        </div>
+        <div class="kit-item">
+          <img src="images/brushes.webp" alt="Two blue-handled paint brushes, one flat and one fine">
+          <h3>Two brushes</h3>
+          <p>A big flat brush for the broad strokes and a fine one for the fiddly bits.</p>
+        </div>
+        <div class="kit-item">
+          <img src="images/colouring-card.webp" alt="A Halloween colouring card with an owl in a witch hat">
+          <h3>Colouring card</h3>
+          <p>A bonus colouring card to warm up your ideas before the paint comes out.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOW TO PAINT ============ -->
+    <section class="section feature">
+      <div class="feature-art">
+        <img src="images/kit-card-general.webp" alt="The Plaster Palz Paint Kit information card showing the dinosaur, unicorn, highland cow and seahorse characters, painting steps and safety information">
+      </div>
+      <div class="feature-copy">
+        <h2>How to <span class="hl-orange">paint</span></h2>
+        <ol class="paint-steps">
+          <li><b>Paint</b> your plaster figure.</li>
+          <li><b>Let each colour dry</b> before adding another.</li>
+          <li><b>Wash your brush</b> between colours and after use.</li>
+          <li><b>Once dry,</b> display your masterpiece!</li>
+        </ol>
+        <p class="small-note">Every kit card has the full guide on the back, plus a QR code for more new kits.</p>
+      </div>
+    </section>
+
+    <!-- ============ GROWN-UPS ============ -->
+    <section class="section grownups" id="grownups">
+      <h2 class="section-title title-navy">A note for grown-ups</h2>
+      <div class="grownup-cards">
+        <div class="gcard">
+          <div class="gcard-icon">🧪</div>
+          <h3>Certified non-toxic</h3>
+          <p>Conforms to ASTM D-4236 and EN71, and certified safe for home use.</p>
+        </div>
+        <div class="gcard">
+          <div class="gcard-icon" aria-hidden="true"><svg width="44" height="44" viewBox="0 0 44 44"><path d="M22 40C10 32 4 24 4 15a9.5 9.5 0 0 1 18-4 9.5 9.5 0 0 1 18 4c0 9-6 17-18 25z" fill="#0065bf"/><clipPath id="hc"><path d="M22 40C10 32 4 24 4 15a9.5 9.5 0 0 1 18-4 9.5 9.5 0 0 1 18 4c0 9-6 17-18 25z"/></clipPath><g clip-path="url(#hc)" stroke="#ffffff" stroke-width="6"><line x1="0" y1="2" x2="44" y2="42"/><line x1="44" y1="2" x2="0" y2="42"/></g></svg></div>
+          <h3>Hand cast in Scotland</h3>
+          <p>Every figure is individually hand cast, finished and packed with care.</p>
+        </div>
+        <div class="gcard">
+          <div class="gcard-icon">👀</div>
+          <h3>Supervision recommended</h3>
+          <p>Suitable for ages 3+ with adult supervision. Paint is not for use on face or body — protect clothing and surfaces while painting.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ CART DRAWER ============ -->
+  <div class="shop-overlay" id="shop-overlay"></div>
+
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping basket">
+    <div class="cart-head">
+      <h2>Your basket 🧺</h2>
+      <button type="button" class="drawer-close" id="cart-close" aria-label="Close basket">✕</button>
+    </div>
+    <p class="cart-empty" id="cart-empty">Your basket is empty — go pick a pal!</p>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-footer" id="cart-footer">
+      <div class="cart-sub-line"><span>Subtotal</span><b id="cart-subtotal">£0.00</b></div>
+      <div class="cart-sub-line"><span>P&amp;P (UK tracked)</span><b id="cart-pp">£0.00</b></div>
+      <div class="cart-total-line"><span>Total</span><b id="cart-total">£0.00</b></div>
+      <button type="button" class="btn btn-primary btn-block" id="checkout-open">Checkout</button>
+    </div>
+  </aside>
+
+  <!-- ============ CHECKOUT MODAL ============ -->
+  <div class="checkout-modal" id="checkout-modal" role="dialog" aria-label="Checkout">
+    <div class="cart-head">
+      <h2>Almost there!</h2>
+      <button type="button" class="drawer-close" id="checkout-close" aria-label="Close checkout">✕</button>
+    </div>
+
+    <form id="checkout-form">
+      <div class="checkout-summary" id="checkout-summary"></div>
+      <label>Your name
+        <input type="text" name="name" required autocomplete="name">
+      </label>
+      <label>Email
+        <input type="email" name="email" required autocomplete="email">
+      </label>
+      <label>Delivery address
+        <textarea name="address" rows="3" required autocomplete="street-address"></textarea>
+      </label>
+      <label>Postcode
+        <input type="text" name="postcode" required autocomplete="postal-code">
+      </label>
+      <label>Notes (optional)
+        <textarea name="notes" rows="2" placeholder="Gift note, questions, anything else…"></textarea>
+      </label>
+      <button type="submit" class="btn btn-primary btn-block">Send Order Request</button>
+      <p class="checkout-note">This opens your email app with the order ready to send. We reply with payment and P&amp;P details — nothing is charged until then.</p>
+    </form>
+
+    <div class="checkout-done" id="checkout-done">
+      <div class="done-icon">🎉</div>
+      <h3>Order request ready!</h3>
+      <p>Your email app should have opened with the order — just press send. We'll reply with payment details and get your Palz on their way.</p>
+      <button type="button" class="btn btn-ghost btn-block" onclick="closeCheckout()">Back to the site</button>
+    </div>
+  </div>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-mark" aria-hidden="true">🎃</span>
+        <span>Plaster<b>Palz</b></span>
+      </div>
+      <p class="footer-tag">Pick. Paint. Play.</p>
+      <p class="footer-social">@plasterpalz on TikTok · Instagram · YouTube — <a href="https://www.plasterpalz.com">www.plasterpalz.com</a></p>
+      <p class="footer-fine">© 2026 Plaster Palz™. Recap paints tightly after use. Rinse splashes with cold water, treat with stain remover, wash as normal.</p>
+    </div>
+  </footer>
+
+  <script src="shop.js"></script>
+</body>
+</html>
