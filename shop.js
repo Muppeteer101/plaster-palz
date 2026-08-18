@@ -87,12 +87,23 @@ function cartTotal() {
 
 /* ---------- Cart actions ---------- */
 
+function bumpBasket() {
+  const badge = document.getElementById("cart-count");
+  const btn = document.getElementById("cart-button");
+  [badge, btn].forEach(el => {
+    el.classList.remove("bump");
+    void el.offsetWidth; // restart animation
+    el.classList.add("bump");
+  });
+}
+
 function addToCart(id) {
   const key = "single:" + id;
   if (cart[key]) cart[key].qty += 1;
   else cart[key] = { type: "single", id, qty: 1 };
   saveCart();
   renderCart();
+  bumpBasket();
   openCart();
 }
 
@@ -104,6 +115,7 @@ function addPackToCart(size, contents) {
   else cart[key] = { type: "pack", size, contents, qty: 1 };
   saveCart();
   renderCart();
+  bumpBasket();
   openCart();
 }
 
@@ -322,6 +334,34 @@ function wireStripeLinks() {
     .catch(() => {});
 }
 
+/* ---------- Scroll reveal animations ---------- */
+
+function wireRevealAnimations() {
+  const targets = document.querySelectorAll(
+    ".section-title, .section-sub, .product-card, .step, .gcard, .kit-item, .plaque-card, .feature-art, .feature-copy, .pack-builder, .watch-copy, .phone-frame"
+  );
+  targets.forEach(el => el.classList.add("reveal"));
+
+  const groups = new Map();
+  targets.forEach(el => {
+    const parent = el.parentElement;
+    if (!groups.has(parent)) groups.set(parent, 0);
+    el.style.transitionDelay = (groups.get(parent) * 0.08) + "s";
+    groups.set(parent, groups.get(parent) + 1);
+  });
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("in-view");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  targets.forEach(el => observer.observe(el));
+}
+
 /* ---------- Wire up ---------- */
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -329,6 +369,7 @@ document.addEventListener("DOMContentLoaded", () => {
   renderCart();
   renderPackBuilder();
   wireStripeLinks();
+  wireRevealAnimations();
 
   document.querySelectorAll("[data-add]").forEach(btn =>
     btn.addEventListener("click", () => addToCart(btn.dataset.add)));
@@ -338,10 +379,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.querySelectorAll("[data-mini-plus]").forEach(btn =>
     btn.addEventListener("click", () => {
-      const id = btn.closest(".mini-tile").dataset.mini;
+      const tile = btn.closest(".mini-tile");
+      const id = tile.dataset.mini;
       if (packPicked() < packSize) {
         packPicks[id] = (packPicks[id] || 0) + 1;
         renderPackBuilder();
+        tile.classList.remove("pop");
+        void tile.offsetWidth;
+        tile.classList.add("pop");
       }
     }));
 

@@ -1032,6 +1032,114 @@ img { max-width: 100%; display: block; }
   margin-top: 24px;
 }
 
+/* ============ Animations ============ */
+
+@keyframes palz-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes palz-wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-3deg); }
+  75% { transform: rotate(3deg); }
+}
+
+@keyframes palz-bump {
+  0% { transform: scale(1); }
+  40% { transform: scale(1.45); }
+  100% { transform: scale(1); }
+}
+
+@keyframes palz-pop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+
+/* Hero art bobs gently */
+.hero-art img { animation: palz-float 5s ease-in-out infinite; }
+
+/* Hero badge wiggles occasionally */
+.hero-badge { animation: palz-wiggle 4s ease-in-out infinite; transform-origin: center; }
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.in-view {
+  opacity: 1;
+  transform: none;
+}
+
+/* Hover lift on interactive cards */
+.product-card,
+.step,
+.gcard,
+.kit-item,
+.plaque-card,
+.mini-tile {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.6s ease;
+}
+
+.product-card:hover,
+.step:hover,
+.gcard:hover,
+.kit-item:hover,
+.plaque-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Reveal + hover need combined transforms — use a wrapper-free trick:
+   once revealed, hover transform wins because .in-view sets transform:none */
+.reveal.in-view.product-card:hover,
+.reveal.in-view.step:hover,
+.reveal.in-view.gcard:hover,
+.reveal.in-view.kit-item:hover,
+.reveal.in-view.plaque-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Product image gives a little zoom on card hover */
+.product-card img { transition: transform 0.25s ease; }
+.product-card:hover img { transform: scale(1.04); }
+
+/* Buttons: lift on hover */
+.btn { will-change: transform; }
+.btn:hover { transform: translateY(-2px); }
+.btn-primary:active { transform: translateY(2px); }
+.btn-add:active { transform: translateY(2px); }
+
+/* Step numbers wiggle on hover */
+.step:hover .step-num { animation: palz-wiggle 0.5s ease-in-out; }
+
+/* Grown-up card icons bounce on hover */
+.gcard:hover .gcard-icon { display: inline-block; animation: palz-pop 0.4s ease; }
+
+/* Basket badge bumps when an item is added */
+.cart-count.bump { animation: palz-bump 0.45s ease; }
+
+/* Basket button shakes slightly when item added */
+.cart-button.bump { animation: palz-wiggle 0.45s ease; }
+
+/* Mini tiles pop when picked */
+.mini-tile.pop { animation: palz-pop 0.3s ease; }
+
+.mini-tile.picked { transform: translateY(-3px); }
+
+/* Nav logo pumpkin wiggles on hover */
+.logo:hover .logo-mark { display: inline-block; animation: palz-wiggle 0.6s ease-in-out; }
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .hero-art img, .hero-badge { animation: none; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  * { animation-duration: 0.001s !important; transition-duration: 0.001s !important; }
+}
+
 /* ============ Responsive ============ */
 
 @media (max-width: 900px) {
